@@ -12,9 +12,9 @@
 #pip install -r requirements.txt
 #python3.9 manage.py collectstatic
 
-#!/usr/bin/env bash
+#!/usr/bin/env bash    Django==5.0.3
 # exit on error
-#set -o errexit
+set -o errexit
 
 pip install -r requirements.txt
 
