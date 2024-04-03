@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: SpeakEase_Vid
+    buildCommand: "./build.sh"
+    env: python
+    startCommand: "gunicorn SpeakEase_Vid:application"
