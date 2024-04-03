@@ -1,14 +1,10 @@
 #pip install -r requirements.txt
 #python3.9 manage.py collectstatic --noinput
 
-#!/bin/bash
-
-# Ensure that pip is installed
-apt-get update
-apt-get install python3-pip -y
+python -m venv --copies /opt/venv && . /opt/venv/bin/activate
 
 # Install dependencies
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 
 # Collect static files
 python3.9 manage.py collectstatic --noinput
